@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+
+header {
+  /*Contenedor header: logo mas nav bar*/
+  min-height: 50px;
+  background-color: #262626;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #F2F2F2; }
+  header nav {
+    /*contenedor nav bar*/ }
+    header nav ul {
+      display: flex;
+      list-style: none; }
+      header nav ul li {
+        padding: 0px 20px; }
+
+.contenedor {
+  /*contendor info media*/
+  display: flex;
+  min-height: 100vh;
+  align-items: stretch; }
+  .contenedor aside {
+    /*barra izq*/
+    width: 15vw;
+    background-color: #B0AEBF; }
+    .contenedor aside ul {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      align-items: center;
+      margin-top: 20px; }
+      .contenedor aside ul li {
+        color: white;
+        line-height: 30px; }
+  .contenedor main {
+    /*informacion central - notas informativas*/
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    background-color: white; }
+    .contenedor main .posteo {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 90%;
+      padding: 1em;
+      margin-top: 20px; }
+      .contenedor main .posteo img {
+        width: 30vw; }
+      .contenedor main .posteo .contenedorTexto {
+        display: flex;
+        flex-direction: column;
+        padding: 0 1em 0 2em; }
+        .contenedor main .posteo .contenedorTexto .titulo {
+          margin-bottom: 1em;
+          font-size: 1.2em;
+          font-weight: 700; }
+        .contenedor main .posteo .contenedorTexto .texto {
+          margin-top: 1em;
+          text-align: justify; }
+        .contenedor main .posteo .contenedorTexto .fecha {
+          font-size: 0.6em;
+          margin-top: 1em; }
+  .contenedor section {
+    /*barra lateral derecha*/
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #A6A6A6; }
+    .contenedor section .posteoSection {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px; }
+      .contenedor section .posteoSection .texto {
+        text-align: center;
+        margin: 10px 10px;
+        max-width: 40vw; }
+
+/*media query imagenes barra lateral derecha*/
+@media screen and (min-width: 80px) {
+  section .posteoSection img {
+    max-width: 10vw; } }
+footer {
+  width: 100vw;
+  background-color: #262626;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #F2F2F2; }
+  footer .nav ul {
+    display: flex; }
+    footer .nav ul li {
+      list-style: none;
+      padding: 0px 20px; }
+  footer .redes img {
+    width: 20px;
+    padding: 0px 5px; }
+
+/*# sourceMappingURL=styles.css.map */
